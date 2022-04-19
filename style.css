@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "avenir-roman";
+    src: url("fonts/avenir-roman.ttf") format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url("images/bg.jpg") no-repeat top center;
+    font-family: "avenir-roman", sans-serif;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.button{
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #f9f9f9;
+    transition: .2s ease;
+    text-align: center;
+    border: 1px solid #f9f9f9;
+    border-radius: 4px;
+    display: inline-block;
+    position: absolute;
+    top: 16px;
+    right: 32px;
+}
+
+.button:hover{
+    background-color: #f9f9f9;
+    color: black;
+}
+
+img.franquias-logo{
+    max-width: 600px;
+    position: absolute;
+    bottom: 25px;
+}
+
+img.logo{
+    max-width: 160px;
+}
+
+.conteudo{
+    margin-top: -21px;
+    padding-left: 80px;
+}
+
+.conteudo > p{
+    color: rgba(192, 192, 192, 0.8);
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 16px;
+}
+
+h1{
+    font-size: 43px;
+    line-height: 53px;
+    color: #f9f9f9;
+    margin: 20px 0 30px 0;
+}
+
+.container-precos{
+    display: flex;
+}
+
+.preco span{
+    color: #f9f9f9;
+    font-weight: bold;
+    line-height: 36px;
+    font-size: 30px;
+}
+
+.preco{
+    width: 300px;
+    max-width: 100%;
+    color: rgba(192, 192, 192, 0.8);
+}
+
+.preco:first-child{
+    display: grid;
+}
+
+.preco:first-child a{
+    align-self: end;
+}
+
+.preco a{
+    background-color: #0063e5;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+    color: #f9f9f9;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    padding: 16.5px 14px;
+    transition: .2s ease;
+}
+
+.preco a:hover{
+    background-color: #0483ee;
+}
+
+.preco p:first-child{
+    margin: 0px;
+}
+
+.preco p {
+    margin: 16px 0;
+}
+
+.preco + .preco{
+    margin-left: 32px;
+}
