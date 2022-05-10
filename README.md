@@ -3,7 +3,7 @@
  
  <a href="https://imgur.com/of3VSPT"><img src="https://i.imgur.com/of3VSPT.png" title="source: imgur.com" /></a>
  
- ## 🌐 Technology
+ ## 🚀 Technologies
  * HTML
  * CSS
 
