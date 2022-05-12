@@ -8,11 +8,20 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    background: url("images/bg.jpg") no-repeat top center;
     font-family: "avenir-roman", sans-serif;
+    background-color: #040714;
+}
+
+section{
+    padding: 84px;
+}
+
+.main-content{
+    background: url("images/bg.jpg") no-repeat top center;
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -125,3 +134,182 @@ h1{
 .preco + .preco{
     margin-left: 32px;
 }
+
+/*----------- PLANOS ----------- */
+.planos{
+    margin-top: 84px;
+}
+
+.planos .titulo{
+    text-align: center;
+    color: white;
+    font-size: 44px;
+    margin-bottom: 30px;
+}
+
+.cards{
+    color: white;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#oferta{
+    
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #9F3DFE, #040714) 1;
+}
+
+
+.card{
+    position: relative;
+    width: 360px;
+    height: 374px;
+
+    border-width: 3px;
+    border-style: solid;
+    background: linear-gradient(to bottom, #030C3F, #040714);
+
+    border: 3px solid;
+    border-image: linear-gradient(to bottom, #00C5F2, #040714) 1;
+
+    padding: 50px 44px 0px;
+    align-items: center;
+
+    text-align: center;
+}
+
+.card span{
+    text-align: center;
+    color: #c0c0c0;
+    font-size: 18px;
+}
+
+
+.card h3{
+    margin-top: 24px;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+#anual{
+    font-size: 26px;
+}
+
+.card p{
+    font-size: 18px;
+    color: #c0c0c0;
+}
+
+.card button{
+    border: none;
+    margin-top: 30px;
+    width: 292px;
+    height: 60px;
+    padding: 16.5px 24px;
+    background-color: #0084FF;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+
+.card button:hover{
+    background-color: #1d91fd;
+}
+
+.card #button-oferta{
+    background-color: #7828FF;
+}
+
+.card #button-oferta:hover{
+    background-color: #843efe;
+}
+
+#variacao{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #c0c0c0;
+    margin: 20px;
+}
+
+/*----------- SESSÃO DISPOSITIVOS ----------- */
+
+.dispositivos{
+    display: flex;
+    margin-top: 84px;
+    color: #f9f9f9;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.dispositivos .text{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.dispositivos h2{
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+.dispositivos p{
+    color: #A2A3A5;
+    width: 760px;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 21px;
+}
+
+.dispositivos img{
+    width: 49%
+}
+
+/*----------- GALERIA ----------- */
+
+.gallery{
+    margin-top: 84px;
+}
+
+.gallery header{
+    text-align: center;
+}
+
+.gallery header h2{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+.gallery header p{
+    color: #A2A3A5;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4vw;
+
+}
+
+.galery-itens{
+    width: 33%;
+    padding: 12px;
+    
+}
+
+.galery-itens img{
+    width: 100%;
+    height: 100%;
+    
+}
+
